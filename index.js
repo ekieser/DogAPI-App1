@@ -20,6 +20,7 @@ function logDogs(responseJson) {
 function submitForm() {
     $('form').submit(event => {
         event.preventDefault(); 
+        console.clear();
         let dogNum = document.getElementById('number-entry').value;
         retrieveImages(dogNum);
     });
